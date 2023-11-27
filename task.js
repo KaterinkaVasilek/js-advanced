@@ -33,7 +33,7 @@ class Library {
 
   removeBook(title) {
     if (this.hasBook(title)) {
-      this.#books.splice(this.#books.indexOf(title), title);
+      this.#books.splice(this.#books.indexOf(title), 1);
     } else {
       throw new Error('Такой книги нет')
     }
