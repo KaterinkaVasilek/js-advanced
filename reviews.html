@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Add review</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Оставьте отзыв о продукте</h1>
+    <div class="review">
+      <h2 class="review__title">Введите текст отзыва</h2>
+      <form class="review__form" action="#" method="post" data-form>
+        <label>Название продукта*:
+          <input class="review__input" type="text" data-input-title="productTitle" required>
+        </label>
+        <textarea class="review__textarea" name="reviewField" data-textarea="reviewField" id="reviewField" cols="50"
+          rows="5"></textarea>
+        <button class="review__button" type="submit" data-button="addReview">Добавить отзыв</button>
+      </form>
+
+      <a class="link" href="/">Перейти к списку товаров</a>
+    </div>
+  </div>
+
+  <script src="form.js" type="module"></script>
+</body>
+
+</html>
